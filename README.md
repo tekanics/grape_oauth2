@@ -170,6 +170,9 @@ class User < ApplicationRecord
 
     # check the password
     user.authenticate(password)
+    
+    # return user object
+    user
   end
 end
 ```
